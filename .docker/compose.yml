@@ -1,0 +1,6 @@
+services:
+
+networks:
+  kolesa:
+    external: true
+    name: kolesa
