@@ -10,4 +10,8 @@ case "${1}" in
     "wait")
         exec bash -c "while true; do sleep 20; done"
         ;;
+
+    "run")
+        exec bash -c "scrapy crawl list"
+        ;;
 esac
