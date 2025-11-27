@@ -1,0 +1,1 @@
+<http|https|socks5>://[<user>:<pass>@]<host>:<port>
