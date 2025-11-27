@@ -1,4 +1,15 @@
 services:
+  crawler:
+    restart: always
+    build:
+      context: ..
+      dockerfile: .docker/Dockerfile
+    command: "run"
+    container_name: kolesa_crawler
+    networks: [ "kolesa" ]
+    hostname: crawler
+    env_file: ../.env
+    volumes: [ "..:/application/src/" ]
 
 networks:
   kolesa:
